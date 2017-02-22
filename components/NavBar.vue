@@ -27,7 +27,7 @@
       Connect
     </nuxt-link>
     <nuxt-link to="/under_construction" class="nav-item">
-      Team
+      2Team
     </nuxt-link>
     <a target="_blank" href="https://www.facebook.com/WHCSRadio/" class="nav-item">
       <span class="icon">
@@ -37,8 +37,9 @@
     <a target="_blank" href="https://www.instagram.com/whcsradio/?hl=en" class="nav-item">
       <span class="icon">
         <i class="fa fa-instagram"></i>
-      </span>
+      </span>    
     </a>
+
 
 
 

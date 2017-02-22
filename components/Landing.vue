@@ -1,5 +1,5 @@
 <template>
-	<section class="hero is-info is-large">
+	<section class="hero is-info is-fullheight">
 
 
   <!-- Hero content: will be in the middle -->
