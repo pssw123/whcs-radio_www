@@ -1,6 +1,6 @@
 <template lang="pug">
-  div
-    h1 We are still Building......
+  .container
+    h1 We are under Contruction
 </template>
 
 <script>

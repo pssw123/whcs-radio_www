@@ -2,16 +2,16 @@
   .container
     nav.nav
       .nav-left
-        a.nav-item
+        nuxt-link.nav-item(to="/")
           img(src='http://bulma.io/images/bulma-logo.png', alt='Bulma logo')
       .nav-center
-        a.nav-item
+        a.nav-item(href="https://www.facebook.com/WHCSRadio/" target="_blank")
           span.icon
             i.fa.fa-facebook
-        a.nav-item
+        a.nav-item(href="https://twitter.com/whcsradio" target="_blank")
           span.icon
             i.fa.fa-twitter
-        a.nav-item
+        a.nav-item(href="https://www.instagram.com/whcsradio/?hl=en" target="_blank")
           span.icon
             i.fa.fa-instagram
       // This "nav-toggle" hamburger menu is only visible on mobile
@@ -23,11 +23,7 @@
       // This "nav-menu" is hidden on mobile
       // Add the modifier "is-active" to display it on mobile
       .nav-right.nav-menu(:class="{'is-active': isActive}")
-        a.nav-item Schedule
-        a.nav-item Shows
-        a.nav-item Playlists
-        a.nav-item Team
-        a.nav-item Mission
+        slot
 </template>
 
 
