@@ -17,12 +17,10 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-span
-  width: 100%
-  display: inline-block
 @media screen and (max-width: 768px)
   .nav-item
     padding: 0
   span
     padding: 0.75em
+    width: 100%
 </style>
