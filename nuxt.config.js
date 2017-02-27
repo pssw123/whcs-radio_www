@@ -47,6 +47,7 @@ module.exports = {
         //   query: { config: '.stylelintrc' }
         // })
       }
-    }
+    },
+    vendor: ['vue-howler']
   }
 }

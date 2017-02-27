@@ -12,3 +12,6 @@ dist
 
 # webstorm config folder
 .idea
+
+# MacOS garbage files
+*.DS_Store
