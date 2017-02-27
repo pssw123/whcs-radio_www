@@ -1,7 +1,7 @@
 <template lang="pug">
   nuxt-link.nav-item(
     :class="{'is-active': selected}",
-    :to="to"
+    :to="to",
     ): slot
 </template>
 
@@ -18,6 +18,9 @@ export default {
   computed: {
     isSelected () {
       this.selected = (this.to === this.$route.path)
+      if (this.selected) {
+        this.$parent.$emit('close_nav')
+      }
     }
   }
 }

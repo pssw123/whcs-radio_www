@@ -23,8 +23,8 @@
           span
         // This "nav-menu" is hidden on mobile
         // Add the modifier "is-active" to display it on mobile
-        .nav-right.nav-menu(:class="{'is-active': isActive}")
-          slot
+        .nav-right.nav-menu(
+          :class="{'is-active': isActive}"): slot
 </template>
 
 
@@ -39,7 +39,15 @@ export default {
     clickNav (event) {
       event.preventDefault()
       this.isActive = !this.isActive
+    },
+    closeNav (event) {
+      this.isActive = false
     }
+  },
+  created () {
+    this.$on('close_nav', () => {
+      this.closeNav()
+    })
   }
 }
 </script>
