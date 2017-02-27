@@ -4,6 +4,7 @@
       nav-item(to="/schedule") Schedule
       nav-item(to="/shows") Shows
       nav-item(to="/playlists") Playlists
+      nav-item(to="/events") Events
       nav-item(to="/mission") Mission
       nav-item(to="/team") Team
     main
