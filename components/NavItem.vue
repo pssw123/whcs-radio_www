@@ -1,6 +1,8 @@
 <template lang="pug">
-  nuxt-link.nav-item(:class="{'is-active': selected}", :to="to")
-    slot
+  nuxt-link.nav-item(
+    :class="{'is-active': selected}",
+    :to="to"
+    ): slot
 </template>
 
 <script>
