@@ -1,6 +1,5 @@
 <template lang="pug">
-  div(@click="closeNav")
-    nuxt-link.nav-item(:to="to"): slot
+  nuxt-link.nav-item(:to="to"): span(@click="closeNav"): slot
 </template>
 
 <script>
@@ -13,17 +12,12 @@ export default {
     closeNav (event) {
       this.$parent.$emit('closeNav')
     }
-  },
-
-  computed: {
-    isSelected  () {
-      const select = this.to === this.$route.path
-      if (select) this.closeNav()
-      return select
-    }
   }
 }
 </script>
 
-<style>
+<style lang="sass">
+span
+  width: 100%
+  display: inline-block
 </style>
