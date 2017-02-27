@@ -49,5 +49,8 @@ module.exports = {
       }
     },
     vendor: ['vue-howler']
+  },
+  router: {
+    linkActiveClass: 'is-active'
   }
 }

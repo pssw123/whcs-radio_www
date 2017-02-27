@@ -4,7 +4,9 @@
       nav.nav
         .nav-left
           nuxt-link.nav-item(to="/")
-            img(src='http://bulma.io/images/bulma-logo.png', alt='Bulma logo')
+            img(src='http://bulma.io/images/bulma-logo.png',
+              alt='Bulma logo',
+              @click="closeNav")
         .nav-center
           a.nav-item(href="https://www.facebook.com/WHCSRadio/" target="_blank")
             span.icon
@@ -17,7 +19,9 @@
               i.fa.fa-instagram
         // This "nav-toggle" hamburger menu is only visible on mobile
         // You need JavaScript to toggle the "is-active" class on "nav-menu"
-        span.nav-toggle(:class="{'is-active': isActive}" @click="clickNav")
+        span.nav-toggle(
+          :class="{'is-active': isActive}",
+          @click="clickNav")
           span
           span
           span
@@ -45,7 +49,7 @@ export default {
     }
   },
   created () {
-    this.$on('close_nav', () => {
+    this.$on('closeNav', () => {
       this.closeNav()
     })
   }
