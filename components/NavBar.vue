@@ -1,5 +1,5 @@
 <template lang="pug">
-  .hero-head
+  header.hero-head
     .container
       nav.nav
         .nav-left
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.hero-head
+header
   z-index: 1
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4)
   position: fixed
