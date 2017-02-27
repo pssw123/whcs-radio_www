@@ -6,7 +6,8 @@
       nav-item(to="/playlists") Playlists
       nav-item(to="/mission") Mission
       nav-item(to="/team") Team
-    nuxt
+    main
+      nuxt
     my-footer
 </template>
 
