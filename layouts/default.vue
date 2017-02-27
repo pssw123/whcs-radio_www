@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  .layout
     nav-bar
       nav-item(to="/schedule") Schedule
       nav-item(to="/shows") Shows
