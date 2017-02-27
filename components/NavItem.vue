@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 span
   width: 100%
   display: inline-block
